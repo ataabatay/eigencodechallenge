@@ -17,8 +17,12 @@ python eigen.py text_files/doc1.txt text_files/doc2.txt text_files/doc3.txt outp
 '''
 
 ## Plan notes
-- 
-
+- Upon reading the task, an immediate decision felt like it had to be made about the output. 
+  - I was in between 2 options: tabulating the answer or create a csv file as an output. I entertained the idea of tabulating the answer in the terminal which I thought was a fun idea but in the end decided to go with creating a csv file as an output with the deliverables.
+- One thing I noticed was the vague notion of 'most frequent **interesting** words'. This naturally tingled my spidey senses so I took note of this and moved on knowing that the most frequent words were most likely going to be common words (i.e 'I', 'to', 'as', etc.).
+- Next thing to think about was how the program should be designed. Should the program just be designed so that it only runs for the given text files and create an output or should it be dynamic enough to accept as many or as little text files that the user passes.
+  - I decided to go with designing the program so that it takes command line arguments in the form of text file names so that the user can pass as many or as little filenames to be analysed.
+- Once these decisions were made, I proceded following the build notes below.
 
 ## Build notes
 - Set up the environment on github,
