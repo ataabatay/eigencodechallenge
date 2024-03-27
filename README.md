@@ -8,13 +8,15 @@
 ## Getting Started / Installation
 - Access the source code via the 'Clone or download' button,
 - Once the directory is pulled, navigate into it, you will see the eigen.py file and the text_files folder where sample text files were created
-'''
+
+```python
 python eigen.py <inputfilename> <inputfilename> <outputfilename>
-'''
-Example
-'''
+```
+
+### Example
+```python
 python eigen.py text_files/doc1.txt text_files/doc2.txt text_files/doc3.txt output.csv
-'''
+```
 
 ## Plan notes
 - Upon reading the task, an immediate decision felt like it had to be made about the output. 
