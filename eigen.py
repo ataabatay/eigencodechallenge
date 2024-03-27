@@ -54,7 +54,7 @@ def find_and_add_parent_docs_and_samples(words: dict, lines: list, number_of_sam
   return doc_and_sample_added_words
 
 
-def filter_common_words(words: dict, common_words: list) -> list:
+def filter_common_words(words: list, common_words: list) -> list:
     '''
     Takes a list of words and iterates through them one by one checking if they are found in the common_words list or not, returns all the non-common words in a list
     '''
@@ -73,6 +73,7 @@ def fetch_most_common_words() -> list:
     try:
       with open('mostcommonwords.txt') as file:
         common_words = file.read().splitlines()
+        print(common_words)
         for i, word in enumerate(common_words):
           common_words[i] = word.lower()
       return common_words
@@ -140,7 +141,8 @@ def check_clas(args: list):
                 f"❌ HEEEJJJJ {file} is a non .txt file donno what to do with that!"
             )
     if len(args) < 1:
-      sys.exit('Usage: eigen.py input.txt input2.txt ... output.csv')      
+      sys.exit('Usage: eigen.py input.txt input2.txt ... output.csv')    
+    return True  
 
 if __name__ == "__main__":
     main()
